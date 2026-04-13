@@ -1,100 +1,105 @@
-Music Store Data Analysis using SQL
-Overview
+#  Music Store Data Analysis using SQL
 
-This project focuses on analyzing a Music Store database using SQL to extract meaningful insights about customer behavior, sales trends, and music preferences.
+##  Overview
+This project analyzes a Music Store relational database using SQL to uncover insights into customer behavior, sales performance, and music trends.
 
-The dataset contains multiple related tables such as customers, invoices, artists, albums, and tracks, allowing for deep relational analysis.
+By querying multiple interconnected tables, this project demonstrates how raw data can be transformed into meaningful business insights.
 
-Objectives
-Analyze customer purchasing behavior
-Identify top customers and high-revenue cities
-Discover most popular music genres
-Evaluate artist and track performance
-Generate business insights using SQL queries
-Database Schema
+---
 
-The database consists of the following key tables:
+##  Objectives
+- Understand customer purchasing patterns  
+- Identify top customers and revenue-generating cities  
+- Analyze popular music genres and artist performance  
+- Extract insights to support business decisions  
 
-Customer
-Employee
-Invoice
-InvoiceLine
-Artist
-Album
-Track
-Genre
-MediaType
-Playlist
-PlaylistTrack
-🔗 Relationships
-Customer → Invoice (One-to-Many)
-Invoice → InvoiceLine (One-to-Many)
-Artist → Album → Track (One-to-Many)
-Genre → Track
-Employee → Customer
+---
 
-Key Analysis Questions
-Who is the senior-most employee?
-Which countries have the most invoices?
-What are the top 3 invoice totals?
-Which city generates the highest revenue?
-Who is the best customer?
-List all Rock music listeners
-Top 10 artists with most Rock tracks
-Tracks longer than average duration
-Amount spent by each customer on artists
-Most popular genre by country
-Top customer in each country
+##  Dataset & Schema
+The database consists of multiple relational tables:
 
-SQL Concepts Used
-SELECT statements
-JOINs (INNER, LEFT)
-GROUP BY & HAVING
-Aggregate functions (SUM, COUNT, AVG)
-Subqueries
-Window functions
-ORDER BY & LIMIT
+**Core Tables:**
+- Customer, Employee  
+- Invoice, InvoiceLine  
+- Artist, Album, Track  
+- Genre, MediaType  
+- Playlist, PlaylistTrack  
 
-Key Insights
-Top revenue-generating countries: Brazil, France, Germany
-Rock is the most popular music genre
-Prague is the highest revenue-generating city
-High-value customers contribute significantly to sales
-A few artists dominate the Rock genre
+###  Relationships
+- Customer → Invoice → InvoiceLine  
+- Artist → Album → Track  
+- Genre → Track  
+- Employee → Customer  
 
-Business Recommendations
-Focus marketing on top-performing countries
-Provide loyalty rewards to high-spending customers
-Promote Rock music and top artists
-Use personalized recommendations
-Run region-based marketing campaigns
+---
 
-Challenges Faced
-Understanding relationships between multiple tables
-Writing complex JOIN queries
-Handling large datasets
-Using advanced SQL functions
-Ensuring accurate aggregations
+##  Key Business Questions
+- Who is the senior-most employee?  
+- Which countries generate the most invoices?  
+- What are the top 3 invoice values?  
+- Which city generates the highest revenue?  
+- Who is the best customer?  
+- Who listens to Rock music?  
+- Which artists produce the most Rock tracks?  
+- Which tracks are longer than average?  
+- How much does each customer spend on artists?  
+- What is the most popular genre by country?  
+- Who is the top customer in each country?  
 
-Project Structure
-Music-Store-SQL-Analysis/
-│── dataset/
-│── queries/
-│── outputs/
-│── presentation/
-│── README.md
-📎 Project Presentation
+---
 
-You can view the project presentation here:
-Music Store Data Analysis PPT (uploaded)
+## 🛠️ SQL Skills Demonstrated
+- Joins (INNER, LEFT)  
+- Aggregations (SUM, COUNT, AVG)  
+- GROUP BY & HAVING  
+- Subqueries  
+- Window Functions  
+- Sorting & Filtering  
 
-Conclusion
+---
 
-This project demonstrates how SQL can be used to analyze relational data and extract valuable business insights. The findings can help improve decision-making, marketing strategies, and customer engagement.
+##  Key Insights
+-  Top markets: Brazil, France, Germany  
+-  Most popular genre: Rock  
+-  Top city: Prague (highest revenue)  
+-  High-value customers significantly impact revenue  
+-  Few artists dominate music sales  
 
-Acknowledgements
+---
 
-This project was developed as part of academic learning to strengthen SQL and data analysis skills.
+##  Business Recommendations
+- Focus marketing on high-performing regions  
+- Offer loyalty rewards to top customers  
+- Promote popular genres like Rock  
+- Use personalized recommendations  
+- Implement region-based marketing strategies  
 
-Author
-Chiluveru Sharath Chandra
+---
+
+##  Challenges
+- Handling complex table relationships  
+- Writing multi-table JOIN queries  
+- Working with large datasets  
+- Applying advanced SQL techniques  
+
+
+---
+
+##  Conclusion
+This project highlights how SQL can be used to analyze structured data and generate actionable insights for improving business performance, customer engagement, and marketing strategies.
+
+---
+
+##  Authors
+
+- Chiluveru Sharath Chandra  
+
+---
+
+##  Support
+If you found this project useful:
+-  Star this repository  
+-  Fork it  
+-  Share it  
+
+---
